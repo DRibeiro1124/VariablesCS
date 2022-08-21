@@ -94,6 +94,8 @@ namespace VariablesCS
 
             //Using DateTime
             //Use the type DateTime to represent the date variables.
+            var whatMonth = DateTime.Now
+            Console.WriteLine(" Wow " + newUser + " I can't believe it's already " + whatMonth);
             //See the lesson on variables for some guidance on DateTime
 
         }
