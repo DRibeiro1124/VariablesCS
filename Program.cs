@@ -2,9 +2,9 @@
 
 namespace VariablesCS
 {
-    class Program
+    static class Program
     {
-        static void cupOfCoffee()
+        static void CupOfCoffee()
         {
             //Part 1
             //Practice creating variables
@@ -18,7 +18,7 @@ namespace VariablesCS
             var phrase = todayDate + " is when I found out that my dog " + fullName + " drinks " + numberOfCupsOfCoffee + " cups of coffee daily, which is good, because he is a dog!!";
             Console.WriteLine(phrase);
         }
-        static string nameGreeting()
+        static string NameGreeting()
         {
             //Part 2
 
@@ -32,7 +32,7 @@ namespace VariablesCS
             return userName;
         }
 
-        static (string, string) favoriteNumbers()
+        static (string, string) FavoriteNumbers()
         {
             //Part 3
             //Practice Getting Different Types of Input From the User
@@ -46,7 +46,7 @@ namespace VariablesCS
             return (firstNumberAsString, secondNumberAsString);
         }
 
-        static void sumOfValues(double firstOperand, double secondOperand, string userName)
+        static void SumOfValues(double firstOperand, double secondOperand, string userName)
         {
             //Add the operand variables from above and save the results in a variable named sum.
             var sum = firstOperand + secondOperand;
@@ -54,7 +54,7 @@ namespace VariablesCS
 
         }
 
-        static void differenceOfValues(double firstOperand, double secondOperand, string userName)
+        static void DifferenceOfValues(double firstOperand, double secondOperand, string userName)
         {
             //Part 5
             //Doing Math
@@ -73,27 +73,27 @@ namespace VariablesCS
         }
 
 
-        static void multiplicationValue(double firstOperand, double secondOperand, string userName)
+        static void MultiplicationValue(double firstOperand, double secondOperand, string userName)
         {//Multiply the operand variables and save the results in a variable named product.
             var product = firstOperand * secondOperand;
             Console.WriteLine(userName + " we can also take those two favorite numbers and multiply them to get " + product);
         }
 
-        static void quotientValue(double firstOperand, double secondOperand, string userName)
+        static void QuotientValue(double firstOperand, double secondOperand, string userName)
         {
             //Divide the firstOperand by the secondOperand and save the results in a variable named quotient.
             var quotient = firstOperand / secondOperand;
             Console.WriteLine("We can also divide those same two numbers and get " + quotient);
         }
 
-        static void remainderValue(double firstOperand, double secondOperand, string userName)
+        static void RemainderValue(double firstOperand, double secondOperand, string userName)
         {
             //Find the remainder when one operand is divided by the other and save the results in a variable named remainder. See this page if you need to learn more about the modulo operator.
             var remainder = firstOperand % secondOperand;
             Console.WriteLine("The remainder of those two numbers is " + remainder);
         }
 
-        static void specialGreeting()
+        static void SpecialGreeting()
         {
             //ADVENTURE MODE
             //Using Logic
@@ -102,9 +102,9 @@ namespace VariablesCS
             var newUser = Console.ReadLine();
             var aliceGreeting = " Hello Alice, please be very careful with the Queen of Hearts, she is evil!";
             var newGreeting = " Hello " + newUser + " have you seen Alice? I hope she's not in Wonderland ";
-            string Alice = "Alice";
+            string alice = "Alice";
             string name = " ";
-            if (newUser == Alice)
+            if (newUser == alice)
             {
                 newGreeting = aliceGreeting;
             }
@@ -120,20 +120,20 @@ namespace VariablesCS
 
         static void Main(string[] args)
         {
-            cupOfCoffee();
-            string userName = nameGreeting();
-            (string firstNumberAsString, string secondNumberAsString) = favoriteNumbers();
+            CupOfCoffee();
+            string userName = NameGreeting();
+            (string firstNumberAsString, string secondNumberAsString) = FavoriteNumbers();
             //Part 4
             // Converting String Input Into Numbers
             //Convert each string above to a double using double.Parse. Save the first value in a variable named firstOperand and the second value in a variable named secondOperand.
             var firstOperand = double.Parse(firstNumberAsString);
             var secondOperand = double.Parse(secondNumberAsString);
-            sumOfValues(firstOperand, secondOperand, userName);
-            differenceOfValues(firstOperand, secondOperand, userName);
-            multiplicationValue(firstOperand, secondOperand, userName);
-            quotientValue(firstOperand, secondOperand, userName);
-            remainderValue(firstOperand, secondOperand, userName);
-            specialGreeting();
+            SumOfValues(firstOperand, secondOperand, userName);
+            DifferenceOfValues(firstOperand, secondOperand, userName);
+            MultiplicationValue(firstOperand, secondOperand, userName);
+            QuotientValue(firstOperand, secondOperand, userName);
+            RemainderValue(firstOperand, secondOperand, userName);
+            SpecialGreeting();
 
         }
 
