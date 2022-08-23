@@ -40,9 +40,9 @@ namespace VariablesCS
             //Get the numbers as strings using Console.ReadLine, store them in variables named firstNumberAsString and secondNumberAsString
             Console.Write("Can you please tell me your favorite number? ");
             var firstNumberAsString = Console.ReadLine();
-            Console.Write("Thank you! I like number " + firstNumberAsString + " too! What is your second favorite number? ");
+            Console.Write($"Thank you! I like number {firstNumberAsString} too! What is your second favorite number? ");
             var secondNumberAsString = Console.ReadLine();
-            Console.WriteLine("Thanks again! Your two favorite numbers are " + firstNumberAsString + " and " + secondNumberAsString);
+            Console.WriteLine($"Thanks again! Your two favorite numbers are {firstNumberAsString} and {secondNumberAsString}");
             return (firstNumberAsString, secondNumberAsString);
         }
 
@@ -50,7 +50,7 @@ namespace VariablesCS
         {
             //Add the operand variables from above and save the results in a variable named sum.
             var sum = firstOperand + secondOperand;
-            Console.WriteLine(userName + " if I take your two favorite numbers and add them together, the result would be " + sum);
+            Console.WriteLine($"{userName} if I take your two favorite numbers and add them together, the result would be {sum}");
 
         }
 
@@ -69,28 +69,28 @@ namespace VariablesCS
             {
                 difference = firstOperand - secondOperand;
             }
-            Console.WriteLine(userName + " also, I can take your favorite two numbers and get the difference by subtracting them and the result would be " + difference);
+            Console.WriteLine($"{userName} also, I can take your favorite two numbers and get the difference by subtracting them and the result would be {difference}");
         }
 
 
         static void MultiplicationValue(double firstOperand, double secondOperand, string userName)
         {//Multiply the operand variables and save the results in a variable named product.
             var product = firstOperand * secondOperand;
-            Console.WriteLine(userName + " we can also take those two favorite numbers and multiply them to get " + product);
+            Console.WriteLine($"{userName} we can also take those two favorite numbers and multiply them to get {product}");
         }
 
         static void QuotientValue(double firstOperand, double secondOperand, string userName)
         {
             //Divide the firstOperand by the secondOperand and save the results in a variable named quotient.
             var quotient = firstOperand / secondOperand;
-            Console.WriteLine("We can also divide those same two numbers and get " + quotient);
+            Console.WriteLine($"We can also divide those same two numbers and get {quotient}");
         }
 
         static void RemainderValue(double firstOperand, double secondOperand, string userName)
         {
             //Find the remainder when one operand is divided by the other and save the results in a variable named remainder. See this page if you need to learn more about the modulo operator.
             var remainder = firstOperand % secondOperand;
-            Console.WriteLine("The remainder of those two numbers is " + remainder);
+            Console.WriteLine($"The remainder of those two numbers is {remainder}");
         }
 
         static void SpecialGreeting()
@@ -113,7 +113,7 @@ namespace VariablesCS
             //Using DateTime
             //Use the type DateTime to represent the date variables.
             var whatMonth = DateTime.Now;
-            Console.WriteLine(" Wow " + newUser + " I can't believe it's already " + whatMonth);
+            Console.WriteLine($" Wow {newUser} I can't believe it's already {whatMonth}");
             //See the lesson on variables for some guidance on DateTime
 
         }
